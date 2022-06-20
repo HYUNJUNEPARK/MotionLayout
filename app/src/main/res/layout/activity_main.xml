@@ -4,31 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainer1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainer2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainer3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainer4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer4"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer5"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>

@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutDescription="@xml/fragment_drag_event_xml_constraintlayout2_scene"
-        app:motionDebug="SHOW_PATH"
         tools:context=".fragment.DragEventFragment">
 
 

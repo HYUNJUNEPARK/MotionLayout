@@ -11,8 +11,7 @@
         android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/dark_puple"
-        app:motionDebug="SHOW_PATH"
+        android:background="@color/dark_purple"
         app:layoutDescription="@xml/fragment_modifying_path_xml_constraintlayout3_scene"
         tools:context=".fragment.ModifyingPathFragment">
 
@@ -24,6 +23,14 @@
             android:src="@drawable/ic_moon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_star_outline"
+            app:tint="@color/yellow"
+            tools:layout_editor_absoluteY="701dp" />
 
         <TextView
             android:id="@+id/textView"

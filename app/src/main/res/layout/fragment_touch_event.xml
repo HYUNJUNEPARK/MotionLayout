@@ -11,9 +11,8 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@color/dark_purple"
         app:layoutDescription="@xml/fragment_touch_event_xml_constraintlayout_scene"
-        app:motionDebug="SHOW_PATH"
         tools:context=".fragment.TouchEventFragment">
 
         <ImageView
