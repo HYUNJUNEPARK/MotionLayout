@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layoutDescription="@xml/fragment_touch_event_xml_constraintlayout_scene"
+        tools:context=".fragment.TouchEventFragment">
+
+        <ImageView
+            android:id="@+id/red_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/touch_event_description"
+            android:src="@drawable/ic_star_outline"
+            app:tint="@color/yellow" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>
