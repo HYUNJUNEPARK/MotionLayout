@@ -6,7 +6,8 @@
         <entry key="app/src/main/res/drawable/ic_moon.xml" value="0.3415" />
         <entry key="app/src/main/res/drawable/ic_star_outline.xml" value="0.224" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.36770833333333336" />
-        <entry key="app/src/main/res/layout/fragment_drag_event.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/fragment_drag_event.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/fragment_modifying_path.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_move_star_cross_screen.xml" value="0.38333333333333336" />
         <entry key="app/src/main/res/layout/fragment_touch_event.xml" value="0.22" />
       </map>

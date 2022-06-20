@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutDescription="@xml/fragment_drag_event_xml_constraintlayout2_scene"
+        app:motionDebug="SHOW_PATH"
         tools:context=".fragment.DragEventFragment">
 
 
@@ -19,7 +20,7 @@
             android:id="@+id/background"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:contentDescription="@string/touch_event_description"
+            android:contentDescription="@string/description"
             android:scaleType="centerCrop"
             android:src="@drawable/background"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -32,29 +33,40 @@
             android:id="@+id/yellowStar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/touch_event_description"
+            android:contentDescription="@string/description"
             android:src="@drawable/ic_star_outline"
             app:tint="@color/yellow"
-            tools:ignore="ImageContrastCheck"/>
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/blueStar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/touch_event_description"
+            android:contentDescription="@string/description"
             android:src="@drawable/ic_star_outline"
             app:tint="@color/blue"
-            tools:ignore="ImageContrastCheck"/>
+            tools:ignore="ImageContrastCheck" />
 
         <ImageView
             android:id="@+id/redStar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/touch_event_description"
+            android:contentDescription="@string/description"
             android:src="@drawable/ic_star_outline"
             app:tint="@color/red"
             tools:ignore="ImageContrastCheck"
             tools:layout_editor_absoluteY="336dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drag Event Sample"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </layout>

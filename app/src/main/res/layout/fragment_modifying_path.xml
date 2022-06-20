@@ -8,33 +8,33 @@
     </data>
 
     <androidx.constraintlayout.motion.widget.MotionLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
-        app:layoutDescription="@xml/fragment_touch_event_xml_constraintlayout_scene"
+        android:background="@color/dark_puple"
         app:motionDebug="SHOW_PATH"
-        tools:context=".fragment.TouchEventFragment">
+        app:layoutDescription="@xml/fragment_modifying_path_xml_constraintlayout3_scene"
+        tools:context=".fragment.ModifyingPathFragment">
 
         <ImageView
-            android:id="@+id/red_star"
+            android:id="@+id/moon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/description"
-            android:src="@drawable/ic_star_outline"
-            app:tint="@color/yellow" />
+            android:src="@drawable/ic_moon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Touch Event Sample"
+            android:text="Modifying Path Sample"
             android:textColor="@color/white"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </layout>

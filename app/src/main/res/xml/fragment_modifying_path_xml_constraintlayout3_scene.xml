@@ -5,46 +5,47 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="500">
-        <KeyFrameSet></KeyFrameSet>
-        <OnClick
-            motion:clickAction="toggle"
-            motion:targetId="@+id/red_star" />
+        motion:duration="1000">
+        <KeyFrameSet>
+            <KeyPosition
+                motion:motionTarget="@+id/moon"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.1" />
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/moon"
+                 motion:clickAction="toggle"/>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
-        <Constraint
-            android:id="@+id/red_star"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
         <Constraint
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="0.0"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
-    </ConstraintSet>
-
-    <ConstraintSet android:id="@+id/end">
+            motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            android:id="@+id/red_star"
+            android:id="@+id/moon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:alpha="1.0"
             motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/moon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
     </ConstraintSet>
 </MotionScene>

@@ -9,10 +9,6 @@ import com.june.mymotionlayout.R
 import com.june.mymotionlayout.databinding.FragmentDragEventBinding
 
 class DragEventFragment : BaseFragment<FragmentDragEventBinding>(R.layout.fragment_drag_event) {
-    override fun initView() {
-        super.initView()
-    }
-
     companion object {
         fun newInstance(): DragEventFragment {
             return DragEventFragment()
