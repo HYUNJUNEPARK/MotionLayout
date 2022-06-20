@@ -11,12 +11,50 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/purple_200"
         app:layoutDescription="@xml/fragment_drag_event_xml_constraintlayout2_scene"
         tools:context=".fragment.DragEventFragment">
 
 
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/touch_event_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
+        <ImageView
+            android:id="@+id/yellowStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/touch_event_description"
+            android:src="@drawable/ic_star_outline"
+            app:tint="@color/yellow"
+            tools:ignore="ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/blueStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/touch_event_description"
+            android:src="@drawable/ic_star_outline"
+            app:tint="@color/blue"
+            tools:ignore="ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/redStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/touch_event_description"
+            android:src="@drawable/ic_star_outline"
+            app:tint="@color/red"
+            tools:ignore="ImageContrastCheck"
+            tools:layout_editor_absoluteY="336dp" />
 
     </androidx.constraintlayout.motion.widget.MotionLayout>
 </layout>

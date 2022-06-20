@@ -23,8 +23,8 @@
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/red_star"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintBottom_toBottomOf="parent" />
     </ConstraintSet>
