@@ -1,3 +1,8 @@
+# Motion Layout
+
+<img src="https://github.com/HYUNJUNEPARK/ImageRepository/blob/master/androidUI/motionLayout.jpg"  width="200" height="400"/>
+
+<br></br>
 `MotionLayout`</br>
 -ConstrainLayout 의 서브클래스</br>
 -레이아웃 전환 UI 이동, 크기 조절 및 애니메이션에 사용</br>
@@ -8,7 +13,6 @@
 ㄴ`Transition` : MotionScene 의 일부로 duration, trigger, how to move the views 등이 명시됨</br>
 ㄴ`ConstraintSet` : Transition 의 start 와 end 를 명시함</br>
 
-<br></br>
 <br></br>
 실습 링크</br>
 https://codelabs.developers.google.com/codelabs/motion-layout?hl=ko#0</br>
